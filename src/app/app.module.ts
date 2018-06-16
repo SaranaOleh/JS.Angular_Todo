@@ -7,15 +7,21 @@ import {HttpClientModule} from "@angular/common/http";
 import {ZzzService} from "./services/zzz/zzz.service";
 import { UserDetailsComponent } from './components/user-details/user-details.component';
 import {RouterModule, Routes} from "@angular/router";
+import { MainComponent } from './components/main/main.component';
+import { PostDetailsComponent } from './components/post-details/post-details.component';
+
 const routes:Routes =[
-  {path:"",component:AppComponent},
-  {path:"userDetails/:id",component:UserDetailsComponent}
+  {path:"",component:MainComponent},
+  {path:"userDetails/:id",component:UserDetailsComponent},
+  {path:"postDetails/:id",component:PostDetailsComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    MainComponent,
+    PostDetailsComponent
   ],
   imports: [
     BrowserModule,

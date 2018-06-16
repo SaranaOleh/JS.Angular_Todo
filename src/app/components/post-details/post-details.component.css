@@ -1,0 +1,44 @@
+.container{
+  border: 2px solid black;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.href{
+  background-image: url("../../../assets/return.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  line-height: 30px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.container>input, .container>textarea{
+  padding: 20px;
+  outline: none;
+}
+.container>input{
+  border: 2px solid black;
+  border-bottom: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container>textarea{
+  border: 2px solid black;
+  border-top: 0;
+  resize: none;
+}

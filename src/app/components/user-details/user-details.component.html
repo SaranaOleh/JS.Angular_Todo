@@ -1,3 +1,14 @@
-<p>
-  user-details works! {{userId}}
-</p>
+<div class="container">
+  <div class="href" routerLink="/"></div>
+  <form action="#" class="formAdd">
+    <input type="text" placeholder="name" name="name" [(ngModel)]="post.name">
+    <input type="submit" value="ADD" (click)="addUser()">
+    <textarea name="desc" placeholder="text" [(ngModel)]="post.desc"></textarea>
+  </form>
+  <ul class="list" *ngFor="let user of details">
+    <li>{{user.name}}
+      <span class="delete" (click)="dellUser(user.id)"></span>
+      <p class="details" (click)="postDetail(user.id)"></p>
+    </li>
+  </ul>
+</div>

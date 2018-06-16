@@ -1,0 +1,12 @@
+<div class="container">
+  <form action="#" class="formAdd">
+    <input type="text" placeholder="name" name="name" [(ngModel)]="name">
+    <input type="submit" value="ADD" (click)="addUser()">
+  </form>
+  <ul class="list" *ngFor="let user of users">
+    <li>{{user.name}}
+      <span class="delete" (click)="dellUser(user.id)"></span>
+      <a class="details" [routerLink]="['/userDetails',user.id]"></a>
+    </li>
+  </ul>
+</div>

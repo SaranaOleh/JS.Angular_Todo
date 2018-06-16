@@ -1,13 +1,3 @@
-<div class="container">
-  <form action="#" class="formAdd">
-    <input type="text" placeholder="name">
-    <input type="submit" value="ADD">
-  </form>
-  <ul class="list" *ngFor="let user of users">
-    <li>{{user.name}}
-      <span class="delete" (click)="dellUser(user.id)"></span>
-      <a class="details" [routerLink]="['/userDetails',user.id]"></a>
-    </li>
-  </ul>
-</div>
-<button (click)="onClick()">CLICK</button>
+<router-outlet>
+
+</router-outlet>

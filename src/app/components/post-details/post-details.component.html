@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="href" [routerLink]="['/userDetails',user]"></div>
+  <ng-container *ngIf="post[0]">
+    <input type="text" name="name" [(ngModel)]="post[0].name" disabled>
+    <textarea name="desc" [(ngModel)]="post[0].desc" disabled></textarea>
+  </ng-container>
+
+</div>
+<button (click)="onClick()">dfdfdf</button>
