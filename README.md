@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # AngularTodo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # ajaxtodo
 >>>>>>> 2fe41e84e285b9e8799c40b48341ca0ae198a14e
+=======
+# AngularTodo
+>>>>>>> b9e943e3065f132b1095a46fe54417c6c0172b0c
